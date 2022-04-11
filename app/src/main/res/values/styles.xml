@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <style name="BottomSheetDialogTheme" parent="ThemeOverlay.MaterialComponents.BottomSheetDialog">
+        <item name="bottomSheetStyle">@style/ModalBottomSheet</item>
+        <item name="android:backgroundDimAmount">0.2</item>
+    </style>
+
+    <style name="ModalBottomSheet" parent="Widget.MaterialComponents.BottomSheet.Modal">
+        <item name="android:elevation">16dp</item>
+        <item name="behavior_draggable">true</item>
+        <item name="behavior_fitToContents">true</item>
+        <item name="behavior_peekHeight">340dp</item>
+        <item name="behavior_halfExpandedRatio">0.5</item>
+        <item name="behavior_hideable">true</item>
+        <item name="shapeAppearanceOverlay">@style/ShapeAppearanceOverlay</item>
+    </style>
+
+    <style name="ShapeAppearanceOverlay" parent="">
+        <item name="cornerFamily">rounded</item>
+        <item name="android:topLeftRadius">8dp</item>
+        <item name="android:topRightRadius">8dp</item>
+    </style>
+</resources>
